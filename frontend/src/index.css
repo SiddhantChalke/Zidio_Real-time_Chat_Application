@@ -4,10 +4,21 @@
 
 body {
 	/* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/bg.png"); */
-	background: rgb(1, 22, 53);
+	background: rgb(10,0,117);
+	background: linear-gradient(45deg, rgba(10,0,117,1) 0%, rgba(170,0,0,0.9808298319327731) 100%);
+	
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+
+#home{
+	/* From https://css.glass */
+background: rgba(0, 225, 255, 0.16);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.7px);
+-webkit-backdrop-filter: blur(5.7px);
 }
 
 /* dark mode looking scrollbar */
