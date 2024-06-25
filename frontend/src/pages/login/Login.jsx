@@ -14,13 +14,13 @@ const Login = () => {
 	};
 
 	return (
-		<div className='flex flex-col items-center justify-center min-w-96 mx-auto'>
-			<div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
+		<div className='flex flex-col items-center justify-center min-w-96 mx-auto '>
+			<div className='w-full p-6 rounded-lg shadow-md bg-gray-40 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-40'>
 				<h1 className='text-3xl font-semibold text-center text-gray-300'>
+					<span className='text-blue-500 block'>Zidio ChatApp</span>
 					Login
-					<span className='text-blue-500'> ChatApp</span>
 				</h1>
-
+				
 				<form onSubmit={handleSubmit}>
 					<div>
 						<label className='label p-2'>
@@ -47,12 +47,12 @@ const Login = () => {
 							onChange={(e) => setPassword(e.target.value)}
 						/>
 					</div>
-					<Link to='/signup' className='text-sm  hover:underline hover:text-blue-600 mt-2 inline-block'>
+					<Link to='/signup' className='text-sm  hover:underline text-blue-300 mt-2 inline-block'>
 						{"Don't"} have an account?
 					</Link>
 
 					<div>
-						<button className='btn btn-block btn-sm mt-2' disabled={loading}>
+						<button className='btn btn-block btn-sm mt-2 bg-green-500 border-green-700' disabled={loading}>
 							{loading ? <span className='loading loading-spinner '></span> : "Login"}
 						</button>
 					</div>
